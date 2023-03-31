@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+//TODO PHUOCNT
 @Entity
 @Table(name = "client")
 public class Client {
