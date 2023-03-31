@@ -1,2 +1,3 @@
-# mock2301
-Use for demo
+### Relevant Articles:
+
+- [CRUD Application With React and Spring Boot](https://www.baeldung.com/spring-boot-react-crud)
