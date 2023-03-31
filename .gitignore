@@ -1,0 +1,17 @@
+
+target/classes/META-INF/maven/com.j6d4/spring-boot-react/pom.xml
+.classpath
+.factorypath
+.project
+.settings/org.eclipse.core.resources.prefs
+.settings/org.eclipse.jdt.apt.core.prefs
+.settings/org.eclipse.jdt.core.prefs
+.settings/org.eclipse.m2e.core.prefs
+.settings/org.springframework.ide.eclipse.prefs
+target/classes/com/baeldung/springbootreact/BoostrapInitialData.class
+target/classes/com/baeldung/springbootreact/controller/ClientsController.class
+target/classes/com/baeldung/springbootreact/domain/Client.class
+target/classes/com/baeldung/springbootreact/repository/ClientRepository.class
+target/classes/com/baeldung/springbootreact/SpringBootReactApplication.class
+target/classes/META-INF/MANIFEST.MF
+target/classes/META-INF/maven/com.j6d4/spring-boot-react/pom.properties

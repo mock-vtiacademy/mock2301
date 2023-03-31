@@ -24,4 +24,8 @@ public class BoostrapInitialData implements CommandLineRunner {
             clientRepository.save(new Client(faker.name().fullName(), faker.internet().emailAddress()));
         }
     }
+    
+    public void testGIT() {
+    	//TODO
+    }
 }
