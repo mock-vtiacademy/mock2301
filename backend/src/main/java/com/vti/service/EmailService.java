@@ -1,6 +1,7 @@
 package com.vti.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Component;
@@ -24,14 +25,20 @@ public class EmailService implements IEmailService {
 	@Autowired
 	private JavaMailSender mailSender;
 
+	@Autowired
+	private Environment env;
+	
 	@Override
 	public void sendRegistrationUserConfirm(String email) {
 
 		User user = userService.findUserByEmail(email);
 		String token = registrationUserTokenRepository.findByUserId(user.getId());
+		
+		//hard code
+		//String confirmationUrl = "http://localhost:8080/api/v1/users/activeUser?token=" + token;
 
-		String confirmationUrl = "http://localhost:8080/api/v1/users/activeUser?token=" + token;
-
+		String confirmationUrl = env.getProperty("user.app.confirmationUrl") + token;
+		
 		String subject = "Xác Nhận Đăng Ký Account";
 		String content = "Bạn đã đăng ký thành công. Click vào link dưới đây để kích hoạt tài khoản \n"
 				+ confirmationUrl;
@@ -45,6 +52,7 @@ public class EmailService implements IEmailService {
 		User user = userService.findUserByEmail(email);
 		String token = resetPasswordTokenRepository.findByUserId(user.getId());
 
+		//hard code
 		String confirmationUrl = "http://localhost:3000/auth/new-password/" + token;
 
 		String subject = "Thiết lập lại mật khẩu";
