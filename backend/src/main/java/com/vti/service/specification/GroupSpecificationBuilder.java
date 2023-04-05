@@ -1,4 +1,4 @@
-package com.vti.specification;
+package com.vti.service.specification;
 
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.util.StringUtils;

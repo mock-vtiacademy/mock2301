@@ -1,4 +1,4 @@
-package com.vti.specification;
+package com.vti.service.specification;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;

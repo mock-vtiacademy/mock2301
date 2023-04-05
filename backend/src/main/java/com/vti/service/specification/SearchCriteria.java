@@ -1,4 +1,4 @@
-package com.vti.specification;
+package com.vti.service.specification;
 
 public class SearchCriteria {
 	private String key;

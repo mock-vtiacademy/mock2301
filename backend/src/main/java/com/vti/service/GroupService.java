@@ -13,7 +13,7 @@ import com.vti.dto.GroupFormForUpdating;
 import com.vti.dto.filter.GroupFilter;
 import com.vti.entity.Group;
 import com.vti.repository.GroupRepository;
-import com.vti.specification.GroupSpecificationBuilder;
+import com.vti.service.specification.GroupSpecificationBuilder;
 
 @Service
 public class GroupService implements IGroupService {
