@@ -114,7 +114,7 @@ public class User implements Serializable {
 		this.avatarUrl = avatarUrl;
 	}
 	
-//	sontung
+//TODO	sontung
 
 	//TODO PHUOCNT
 }
