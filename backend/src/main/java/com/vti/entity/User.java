@@ -113,8 +113,4 @@ public class User implements Serializable {
 	public void setAvatarUrl(String avatarUrl) {
 		this.avatarUrl = avatarUrl;
 	}
-	
-//TODO	sontung
-
-	//TODO PHUOCNT
 }
